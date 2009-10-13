@@ -1,0 +1,3 @@
+sqlite3:
+  :adapter: sqlite3
+  :dbfile: validates_for_convert_encoding_plugin.sqlite3.db
