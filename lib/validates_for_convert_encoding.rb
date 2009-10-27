@@ -12,6 +12,7 @@ module ConvertEncodingValidation
     end
 
     def valid_for_convert_encodeing?
+      return unless columns_for_convert_encode
       columns_for_convert_encode.each do |key, options|
         convert_encodeing_to = options[:to].to_s
         convert_encodeing_from = options[:from].to_s
